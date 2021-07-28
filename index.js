@@ -98,7 +98,6 @@ return [categoryName, data[key]];
 function openCard(itemWrap, itemList) {
   if (itemList.classList.contains('open')) {
       itemList.classList.remove('open');
-
       itemList.style.height = '';
       itemWrap.style.alignSelf = '';
   } else {
@@ -147,7 +146,7 @@ function clearPagination() {
 }
 function setImageBackgroundUrl() {
   const ibg = document.querySelectorAll(".ibg");
-  for (var i = 0; i < ibg.length; i++) {
+  for (let i = 0; i < ibg.length; i++) {
       const img = ibg[i].querySelector('.img-ibg');
 
       if (img) {
@@ -181,11 +180,7 @@ function addSearchFormListener() {
   searchForm.addEventListener('submit', search);
 }
 
-function launchApp() {
-  renderData(false, 'https://swapi.dev/api/people/?page=1');
-  addNavLinksListeners();
-  addSearchFormListener();
-  setImageBackgroundUrl();
-}
-
-launchApp();
+renderData(false, 'https://swapi.dev/api/people/?page=1');
+addNavLinksListeners();
+addSearchFormListener();
+setImageBackgroundUrl();

@@ -301,6 +301,10 @@ body {
     transform: scale(0.9);
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 @media (min-width: 1180px) {
     .container {
         padding: 0;
