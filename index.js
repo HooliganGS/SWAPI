@@ -146,11 +146,11 @@ function clearPagination() {
 }
 
 
-function createPaginationLink(href, serialNumber) {
+function createPaginationLink(href, index) {
   const link = document.createElement('a');
   link.className = 'pagination__link';
-  link.href = href.slice(0, href.length - 1) + serialNumber;
-  link.textContent = serialNumber;
+  link.href = href.slice(0, href.length - 1) + index;
+  link.textContent = index;
   return link;
 };
 
