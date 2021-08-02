@@ -129,7 +129,7 @@ function renderPagination(href, countOfPagination) {
           const paginationItem = createElem('li', 'pagination__item');
           const paginationLink = createPaginationLink(href, i + 1);
           paginationLink.addEventListener('click', clickHandler);
-          paginationItem.prepend(paginationLink);
+          paginationItem.append(paginationLink);
           paginationList.append(paginationItem);
       }
       pagination.prepend(paginationList);
