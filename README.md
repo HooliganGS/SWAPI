@@ -1,2 +1,2 @@
 # SWAPI
-swapi api app
+https://hooligangs.github.io/SWAPI/

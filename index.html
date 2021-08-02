@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SWAPI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="swapi-background ibg">
+        <img src="images/star-wars-backgrounds.jpg " alt="background-image" class="img-ibg">
+    </div>
+    <header class="header">
+        <h1 class="header__title">STARWARS API</h1>
+    </header>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="https://swapi.dev/api/people/?page=1" class="nav__category">People</a>
+            </li>
+            <li class="nav__item">
+                <a href="https://swapi.dev/api/films/" class="nav__category">Films</a>
+            </li>
+            <li class="nav__item">
+                <a href="https://swapi.dev/api/starships/?page=1" class="nav__category">Starships</a>
+            </li>
+            <li class="nav__item">
+                <a href="https://swapi.dev/api/vehicles/?page=1" class="nav__category">Vehicles</a>
+            </li>
+            <li class="nav__item">
+                <a href="https://swapi.dev/api/species/?page=1 " class="nav__category">Species</a>
+            </li>
+            <li class="nav__item">
+                <a href="https://swapi.dev/api/planets/?page=1 " class="nav__category">Planets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <h2 class="main__title">People</h2>
+                <form class="main__search search">
+                    <input type="search" placeholder="Search" class="search__input" />
+                    <button type="submit" class="search__btn">search</button>
+                </form>
+                <div data-id="peopleCnt" class="main__content"></div>
+                <div class="main__pagination pagination"></div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
