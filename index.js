@@ -4,7 +4,8 @@ const forbiddenKeys = ['name', 'created', 'edited', 'url', 'homeworld'];
 const searchForm = document.querySelector('form.search');
 const searchInput = searchForm.querySelector('.search__input');
 const pagination = document.querySelector('.pagination');
-const navList = document.querySelector('.nav__list')
+const navList = document.querySelector('.nav__list');
+const itemsPerPage = 10;
 
 async function renderData(isPagination, href) {
     const response = await fetch(href);
@@ -13,7 +14,6 @@ async function renderData(isPagination, href) {
         const { results } = obj;
         renderMainItems(results);
         if (!isPagination) {
-            const itemsPerPage = 10;
             const countOfPages = Math.ceil(obj.count / itemsPerPage);
             renderPagination(href, countOfPages);
         }
