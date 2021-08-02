@@ -101,7 +101,7 @@ function openCard(itemWrap, itemList) {
       itemList.style.height = '';
       itemWrap.style.alignSelf = '';
   } else {
-      itemList.classList.add('open');
+      itemList.classList.toggle('open');
       itemWrap.classList.add('open');
       itemList.style.height = itemList.scrollHeight + 'px';
   }
