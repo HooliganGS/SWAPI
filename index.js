@@ -144,16 +144,7 @@ function clearPagination() {
       clearPaginationList.remove();
   }
 }
-function setImageBackgroundUrl() {
-  const ibg = document.querySelectorAll(".ibg");
-  for (let i = 0; i < ibg.length; i++) {
-      const img = ibg[i].querySelector('.img-ibg');
 
-      if (img) {
-          ibg[i].style.backgroundImage = `url(${img.src})`;
-      };
-  };
-}
 
 function createPaginationLink(href, serialNumber) {
   const link = document.createElement('a');
@@ -183,4 +174,3 @@ function addSearchFormListener() {
 renderData(false, 'https://swapi.dev/api/people/?page=1');
 addNavLinksListeners();
 addSearchFormListener();
-setImageBackgroundUrl();
