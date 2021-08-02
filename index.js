@@ -80,7 +80,7 @@ function createItem(itemData) {
 
 function textForListItem(data, key) {
     for (let i = 0; i < forbiddenKeys.length; i++) {
-        if (key == forbiddenKeys[i]) {
+        if (key === forbiddenKeys[i]) {
             return '';
         }
     }
