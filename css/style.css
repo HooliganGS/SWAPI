@@ -97,7 +97,7 @@ body {
     margin-bottom: 50px;
 }
 
-.main__container {
+.main__wrapper {
     position: relative;
     background: rgb(215 212 212);
     border-radius: 20px;
