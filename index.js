@@ -97,7 +97,7 @@ return [categoryName, data[key]];
 
 function openCard(itemWrap, itemList) {
   if (itemList.classList.contains('open')) {
-      itemList.classList.remove('open');
+      itemList.classList.toggle('open');
       itemList.style.height = '';
       itemWrap.style.alignSelf = '';
   } else {
