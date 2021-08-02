@@ -172,8 +172,7 @@ body {
     background: white;
     transition: box-shadow .2s;
     font-weight: 700;
-    color: rgb(255, 0, 0);
-    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;
+    color: rgb(0 0 0);
 }
 
 .search__input::placeholder {
